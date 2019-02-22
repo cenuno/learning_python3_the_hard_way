@@ -1,6 +1,6 @@
 #
 # Author:   Cristian E. Nuno
-# Purpose:  Exercise 13: Parameters, UNpacking, Variables
+# Purpose:  Exercise 13: Parameters, Unpacking, Variables
 # Date:     February 21, 2019
 #
 
