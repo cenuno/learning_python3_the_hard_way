@@ -1,7 +1,7 @@
 #
 # Author:   Cristian E. Nuno
-# Date:     Feburary 22, 2019
 # Purpose:  Exercise 14: Prompting and Passing
+# Date:     Feburary 22, 2019
 #
 
 from sys import argv
