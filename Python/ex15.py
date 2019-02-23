@@ -11,29 +11,18 @@
 # the solution is to use argv or input to ask the user what file to use
 #
 
-# imports necessary modules ----
-from sys import argv
-
-# unpacks input and stores it as filename
-script, filename = argv
+# prints prompt
+print("Type the filename:")
+# user sees '> ' to guide them to entering the filename
+filename = input("> ")
 
 # txt returns the file object in filename
 txt = open(filename)
 
-# prints the filename back to console
-print(f"Here's your file {filename}:")
 # reads the file object and prints to console
 print(txt.read())
 
-# prints command
-print("Type the filename again:")
-# user sees '> ' to guide them to entering the filename
-file_again = input("> ")
-
-# txt_again returns the file object in filename
-txt_again = open(file_again)
-
-# reads the file object and prints to console
-print(txt_again.read())
+# close the file and immediately free up any system resources used by it
+txt.close()
 
 # end of script #
