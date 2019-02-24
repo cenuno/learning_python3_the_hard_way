@@ -16,10 +16,11 @@ print("If you do want that, hit RETURN.")
 input("?")
 
 print("Opening the file...")
+# note: no need to use truncate() since target is presumed to be a new file
+#       and the use of 'w' by default truncates the file to 0 bytes
+#       see here for more information:
+#       https://stackoverflow.com/questions/26917197/behaviour-of-truncate-method-in-python
 target = open(filename, 'w')
-
-print("Truncating the file. Goodbye!")
-target.truncate()
 
 print("Now I'm going to ask you for three lines.")
 
